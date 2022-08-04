@@ -26,6 +26,7 @@ const galleryMarkup = makeGalleryMarkup(galleryItems);
 renderMarkup(galleryMarkup);
 // eslint-disable-next-line no-undef
 const instance = new SimpleLightbox('.gallery a', {
+	overlayOpacity: 0.1,
 	captions: true,
 	captionSelector: 'img',
 	captionType: 'attr',
@@ -34,4 +35,3 @@ const instance = new SimpleLightbox('.gallery a', {
 	captionDelay: 250,
 	captionClass: 'ch',
 });
-instance.open();
