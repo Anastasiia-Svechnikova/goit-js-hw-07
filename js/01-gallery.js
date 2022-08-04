@@ -28,8 +28,10 @@ renderMarkup(galleryMarkup);
 galleryRef.addEventListener('click', onGalleryItemClick);
 
 function onGalleryItemClick(e) {
+	if (e.target.nodeName !== 'IMG') {
+		return;
+	}
 	e.preventDefault();
-
 	const modalOptions = {
 		onShow: () => {
 			window.addEventListener('keydown', onEscapeKeyDown);
