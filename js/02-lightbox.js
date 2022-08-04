@@ -24,9 +24,9 @@ function renderMarkup(markup) {
 }
 const galleryMarkup = makeGalleryMarkup(galleryItems);
 renderMarkup(galleryMarkup);
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line no-undef, no-unused-vars
 const instance = new SimpleLightbox('.gallery a', {
-	overlayOpacity: 0.1,
+	overlayOpacity: 0.6,
 	captions: true,
 	captionSelector: 'img',
 	captionType: 'attr',
