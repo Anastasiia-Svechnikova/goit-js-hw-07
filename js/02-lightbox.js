@@ -6,14 +6,14 @@ import { galleryItems } from './gallery-items.js';
 const galleryRef = document.querySelector('.gallery');
 
 function makeGalleryItemMarkup({ preview, original, description }) {
-	return `
+	return `<li>
   <a class="gallery__item" href="${original}">
     <img
       class="gallery__image"
       src="${preview}"
       alt="${description}"
     />
-  </a>`;
+  </a></li>`;
 }
 
 function makeGalleryMarkup(arr) {
