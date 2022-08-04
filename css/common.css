@@ -8,11 +8,43 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
+
+    background-color: black;
+    color: rgba(245, 245, 245, 0.711);
+  
   line-height: 1.5;
 }
+a{
+  color: inherit;
 
+}
+.list{
+  width: 350px;
+  margin-top: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  display: flex;
+  padding: 0;
+gap: 50px;
+}
+
+.list__link {
+text-decoration: none;
+text-align: center;
+width: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+border: 1px solid rgba(245, 245, 245, 0.711);
+border-radius: 10px;
+transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list__link:hover{
+  transform:scale(1.2);
+  
+}
 input {
   padding: 8px;
   font: inherit;
